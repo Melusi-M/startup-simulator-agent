@@ -1,0 +1,41 @@
+[project]
+name = "startup-simulator-agent"
+version = "0.1.0"
+description = "A guarded multi-agent startup simulation system with planning, specialist collaboration, reflection, and structured outputs."
+readme = "README.md"
+license = "MIT"
+authors = [
+    { name = "Melusi-M" },
+]
+requires-python = ">=3.12"
+keywords = [
+    "agents",
+    "anthropic",
+    "crewai",
+    "pydantic",
+    "startup",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "crewai[anthropic]>=1.15.23",
+    "pydantic>=2.12.5",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+startup-simulator-agent = "startup_simulator_agent.main:main"
+
+[build-system]
+requires = ["uv_build>=0.10.6,<0.11.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "pytest-cov>=7.1.0",
+]
