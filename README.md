@@ -60,7 +60,7 @@ Demo mode does not require an API key.
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/startup-simulator-agent.git
+git clone https://github.com/Melusi-M/startup-simulator-agent.git
 cd startup-simulator-agent
 ```
 
